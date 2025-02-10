@@ -1,0 +1,222 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-size: cover;
+    color: #333;
+    border: 2px #ddd;
+}
+h3{
+    color: white;
+    font-family: Verdana;
+    
+}
+h2{
+    color: white;
+    font-family: Verdana;
+    
+}
+
+label{
+    color: white;
+    font-family: Verdana;
+    
+}
+p{
+    color: white;
+    font-family: Verdana;
+    
+}
+header {
+    background-color: #76B900;
+            overflow: hidden;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 2s;
+            color: black;
+            font-family: 'times new roman';
+            font-size: large;
+            
+}
+nav {
+    background-color: #76B900;
+            overflow: hidden;
+            padding-bottom: 15px;
+           
+            justify-content: space-between;
+            text-align: center;
+    animation: fadeIn 2s;
+}
+nav a {
+    color: black;
+            text-decoration: none;
+            padding: 14px 14px;
+            font-family: 'Verdena';
+            font-size: large;
+}
+nav a:hover {
+    color: lightgreen;
+}
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+input[type="button"] {
+    background-color: black;
+    /* Green */
+    color: #ddd;
+    border: 1px solid #76B900 ;
+    width: 40%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+input[type="button"]:hover {
+    background-color:#76B900;
+    color: black;
+}
+.products {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+.product {
+    /* background: linear-gradient(to right, rgba(73, 72, 72, 0.616),rgba(118, 185, 0, 1)); */
+    background-color: black;
+    padding: 1rem;
+    border: 1px solid #76B900;
+    border-radius: 5px;
+    text-align: center;
+    
+    animation: fadeInUp 1s;
+}
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.product img {
+    max-width: 100%;
+    height: 200px ;
+    object-fit:fill;
+    border-radius: 5px;
+    animation: fadeInUp 1s ease-out;
+}
+
+footer {
+    background-color: #76B900;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s;
+    color: black;
+    font-family: 'times new roman';
+    font-size: large;
+}
+.contact-form {
+    background: linear-gradient(to right, rgba(42, 29, 100, 0.5),rgba(119, 50, 119, 0.5));
+    
+    padding: 1rem;
+    border-radius: 5px;
+}
+.contact-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.contact-form button {
+    background-color: plum;
+    color: black;
+    border: black;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contact-form button:hover {
+    background-color: pink ;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+ 
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+ 
